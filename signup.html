@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Period Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Period Planner</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Calendar</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="form">
+  <h2>Sign Up</h2>
+  <form action="#" method="post">
+    <input type="text" id="signup-username" name="email" placeholder="Enter Email" required>
+    <input type="password" id="signup-password" name="password" placeholder="Create Password" required>
+    <input type="password" id="signup-confirm-password" name="confirm_password" placeholder="Confirm Password" required>
+    <button type="submit" class="btnn">Sign Up</button>
+  </form>
+  <p class="link">
+    Already have an account?<br>
+    <a href="index.html">Login here</a>
+  </p>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.querySelector("form").addEventListener("submit", handleSignup);
+</script>

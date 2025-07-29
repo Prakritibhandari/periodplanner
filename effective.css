@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hi-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hi-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.About-col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.about-img {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .About-col {
+    flex-direction: column;
+  }
+
+  .about-text {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
+.track-cycle {
+  padding: 40px;
+  background: #fff3f3;
+  text-align: center;
+}
+
+.track-cycle h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#periodForm {
+  margin-bottom: 20px;
+}
+
+#periodForm input[type="date"],
+#periodForm button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  border: 1px solid #f44336;
+  border-radius: 5px;
+}
+
+#calendar ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.period-tracker {
+  margin: 30px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Calendar styles */
+
+#calendarContainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  user-select: none;
+}
+
+.calendar-day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-day.period {
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+}
+
+.calendar-day.ovulation {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.calendar-day.weekday-header {
+  background-color: #eee;
+  font-weight: bold;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

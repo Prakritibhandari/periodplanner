@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Period Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Period Planner</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                 
+  <li><a href="home.html">Home</a></li>
+  <li><a href="about.html">about.html or any about page you have</a></li>
+  <li><a href="calendar.html">Calendar</a></li>
+</ul>
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="text" name="search" placeholder="Type to search">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Period Cycle &<br><span>Health</span><br>Mood</h1>
+            <p class="par">
+                Helps plan our events according to our menstrual cycle and energy level.<br>
+                Displays which phase and level of task we should do on that day.
+            </p>
+            <button class="cn"><a href="#">Join Us</a></button>
+
+            <div class="form">
+  <h2>Login</h2>
+  <form action="#" method="post">
+    <input type="text" id="login-username" name="email" placeholder="Enter Email" required>
+    <input type="password" id="login-password" name="password" placeholder="Enter Password" required>
+    <button type="submit" class="btnn">Login</button>
+  </form>
+  <p class="link">
+    Don't have an account?<br>
+    <a href="signup.html">Sign up here</a>
+  </p>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.querySelector("form").addEventListener("submit", handleLogin);
+</script>
